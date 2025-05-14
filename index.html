@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Email Signature Generator</title>
-		<!-- <meta name="color-scheme" content="light dark" />
-    	<meta name="supported-color-schemes" content="light dark" /> -->
+		<meta name="color-scheme" content="light dark" />
+    	<meta name="supported-color-schemes" content="light dark" />
 		<style type="text/css">
 		  	table {
 				border-spacing: 0;
@@ -80,60 +80,13 @@
 				align-items: center;
 				font-family: Arial, sans-serif;
 			}
-
-			.left-block {
-				text-align: center;
-				width: 100px;				
-			}
-
-			.left-block img.logo {
-				width: 100px;
-				height: 98px;
-				display: block;
-			}
-
-			.social-icons {
-				padding-top: 8px;
-			}
-
-			.social-icons a {
-				display: inline-block;
-				text-decoration: none;
-				height: 16px;
-				width: 16px;
-				font-size: 0;
-			}	
-
-			.social-icons a + a {
-				padding-left: 7px;
-			}
-			.social-icons img {
-				height: 100%;
-				width: 100%;	
-				font-size: 0;			
-			}
-
-			.divider {
-				width: 1px;
-				background-color: #1C63ED;
-				height: 80px;
-				padding: 0 40px;
-			}
-
-			.right-block {
-				display: flex;
-				flex-direction: column;
-				gap: 6px;
-			}
-
 			.full-name {
 				font-size: 20px;
 				font-weight: 700;
 				color: #063AA1;
 				line-height: 1;
-				padding-bottom: 3px;
+				padding-bottom: 6px;
 			}
-
 			.position {
 				font-size: 18px;
 				font-weight: 400;
@@ -142,28 +95,18 @@
 				line-height: 1;
 				padding-bottom: 12px;
 			}
-
-			.contact-line a {
-				display: flex;
-				align-items: center;
-				gap: 6px;
-				font-size: 15px;
-				font-weight: 400;
-				line-height: 1;
-				text-decoration: underline;
-				color: #2662BE;
+			@media screen and (max-width: 399.98px) {
+				.divider {
+					padding: 0 20px !important;
+				}
 			}
-
-			.contact-line img {
-				width: 20px;
-				height: 20px;
-			}
-			/* :root {
+			:root {
 				color-scheme: light dark;
 				supported-color-schemes: light dark;
-			} */
+			} 
 
-			/* @media (prefers-color-scheme: dark) {
+			@media (prefers-color-scheme: dark) {
+				.container,
 				table,
 				td {
 					background-color: #06080B !important;
@@ -171,10 +114,11 @@
 
 				h1,
 				h2,
-				p {
+				p,
+				span {
 					color: #ffffff !important;
 				}
-			} */
+			}
 		</style>
 		 <!--[if (gte mso 9) | (IE)]>
 			<style type="text/css">
@@ -290,18 +234,18 @@
 														<![endif]-->
 														<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="box-sizing:border-box;border-spacing:0;border-collapse:collapse;" border="0" cellpadding="0" cellspacing="0" width="100" height="16">
 															<tbody>
-																<tr style="box-sizing:border-box;display:flex;align-items:center;gap:12px;">
-																	<td width="16" height="16" style="box-sizing:border-box;">
+																<tr style="box-sizing:border-box;">
+																	<td width="16" height="16" style="box-sizing:border-box;padding-right:12px;">
 																		<a aria-label="Chat on WhatsApp" href="https://wa.me/15557272397" target="_blank" rel="noopener" style="display:inline-block;line-height:16px;width:16px;height:16px;">
 																			<img src="${icons.whatsapp}" width="16" height="16" border="0">
 																		</a>
 																	</td>
-																	<td width="16" height="16" style="box-sizing:border-box;">
+																	<td width="16" height="16" style="box-sizing:border-box;padding-right:12px;">
 																		<a aria-label="Link to Facebook" href="https://www.facebook.com/linkhms" target="_blank" rel="noopener" style="display:inline-block;line-height:16px;width:16px;height:16px;">
 																			<img src="${icons.facebook}" width="16" height="16" border="0">
 																		</a>
 																	</td>
-																	<td width="16" height="16" style="box-sizing:border-box;">
+																	<td width="16" height="16" style="box-sizing:border-box;padding-right:12px;">
 																		<a aria-label="Link to Instagram" href="https://www.instagram.com/linkhms" target="_blank" rel="noopener" style="display:inline-block;line-height:16px;width:16px;height:16px;">
 																			<img src="${icons.instagram}" width="16" height="16" border="0">
 																		</a>
@@ -330,7 +274,7 @@
 										<![endif]-->
 									</td>
 
-									<td valign="middle" style="padding:0 40px;vertical-align:middle;">
+									<td valign="middle" style="padding:0 40px;vertical-align:middle;" class="divider">
 										<!--[if (gte mso 9) | (IE)]>
 										<table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
 											<tr>
@@ -339,7 +283,9 @@
 										<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="box-sizing:border-box;border-spacing:0;border-collapse:collapse;width:2px;height:80px;" width="2" height="80">
 											<tbody>
 												<tr>
-													<td width="2" heigth="80" style="width: 1px; background-color: #1C63ED; height: 80px;"></td>
+													<td width="2" heigth="80">
+														<div width="2" heigth="80" style="width: 1px; background-color: #1C63ED; height: 80px;"></div>
+													</td>
 												</tr>
 											</tbody>
 										</table>	
@@ -360,7 +306,7 @@
 											<tbody style="box-sizing:border-box;">
 												<tr style="box-sizing:border-box;">
 													<td style="box-sizing:border-box;padding:0">
-														<span style="box-sizing:border-box;font-size:20px;line-height:1;color:#063AA1;font-weight:700;padding-bottom:3px;" class="full-name">${fullName}</span>
+														<span style="box-sizing:border-box;font-size:20px;line-height:1;color:#063AA1;font-weight:700;padding-bottom:6px;display:inline-block;" class="full-name">${fullName}</span>
 													</td>
 												</tr>
 												<tr style="box-sizing:border-box">
@@ -379,8 +325,8 @@
 														<![endif]-->
 														<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-spacing:0;border-collapse:collapse;line-height:1;" valign="middle">
 															<tbody>
-																<tr style="box-sizing:border-box;display:flex;align-items:center;gap:4px;">
-																	<td valign="middle" height="20" style="box-sizing:border-box;line-height:20px;">
+																<tr style="box-sizing:border-box;">
+																	<td valign="middle" height="20" style="box-sizing:border-box;line-height:20px;padding-right:4px;">
 																		<img src="${icons.link}" width="20" height="20" border="0">
 																	</td>
 																	<td height="20" style="box-sizing:border-box;line-height:20px;">
@@ -395,11 +341,11 @@
 																		</span>
 																	</td>
 																</tr>
-																<tr style="box-sizing:border-box;display:flex;align-items:center;gap:4px;padding-top:6px;">
-																	<td height="20" valign="middle" style="box-sizing:border-box;line-height:20px;">
+																<tr style="box-sizing:border-box;">
+																	<td height="20" valign="middle" style="box-sizing:border-box;line-height:20px;padding-right:4px;padding-top:4px;">
 																		<img src="${icons.email}" width="20" height="20" border="0">
 																	</td>
-																	<td height="20" style="box-sizing:border-box;line-height:20px;">
+																	<td height="20" style="box-sizing:border-box;line-height:20px;padding-top:2px;">
 																		<span style="white-space:nowrap;text-decoration:none;box-sizing:border-box;font-size:15px">
 																			<a 
 																				aria-label="Email address"
@@ -411,11 +357,11 @@
 																		</span>
 																	</td>
 																</tr>
-																<tr style="box-sizing:border-box;display:flex;align-items:center;gap:4px;padding-top:6px;">
-																	<td height="20" valign="middle" style="box-sizing:border-box;line-height:20px;">
+																<tr style="box-sizing:border-box;">
+																	<td height="20" valign="middle" style="box-sizing:border-box;line-height:20px;padding-right:4px;padding-top:2px;">
 																		<img src="${icons.whatsappNumber}" width="20 " height="20" border="0">
 																	</td>
-																	<td height="20" style="box-sizing;border-box;line-height:20px;">
+																	<td height="20" style="box-sizing;border-box;line-height:20px;padding-top:4px;">
 																		<span style="box-sizing:border-box;font-size:15px;">
 																			${whatsappNumber}
 																		</span>
